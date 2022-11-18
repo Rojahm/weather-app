@@ -1,0 +1,108 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+h1,
+h3 {
+  margin: 0;
+}
+h1 {
+  font-weight: 900;
+}
+.container {
+  width: 563px;
+  border: 1px solid palegreen;
+  margin: 0 auto;
+  padding: 15px 30px;
+  border-radius: 4px;
+}
+
+.search {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.search-input {
+  width: 60%;
+  height: 35px;
+  border: 1px solid forestgreen;
+  border-radius: 4px;
+}
+.submit-button {
+  width: 15%;
+  height: 40px;
+  border: 1px solid forestgreen;
+  background: greenyellow;
+  border-radius: 4px;
+}
+.tempreture h1 {
+  display: inline;
+  font-size: 40px;
+}
+.units {
+  vertical-align: top;
+}
+.units a:hover {
+  cursor: pointer;
+}
+.weather-details {
+  padding: 0 10px;
+}
+.weather-details ul {
+  margin: 0;
+  text-align: right;
+}
+.info-group,
+.header-for-weather {
+  display: inline-flex;
+}
+.header-for-weather {
+  margin-top: 18px;
+  width: 100%;
+}
+.city-details {
+  width: 40%;
+}
+.weather-info {
+  text-align: right;
+  width: 60%;
+}
+
+.weather-details-menu li {
+  display: inline-block;
+  padding: 0 2px;
+}
+.weather-details-menu .menu-items:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+
+  cursor: pointer;
+}
+.weather-forcast {
+  text-align: center;
+}
+.forcast-card-panel {
+  text-align: center;
+  display: inline-flex;
+}
+.forcast-card {
+  border-radius: 5px;
+  margin: 0 20px;
+  padding: 2px 6px;
+}
+.forcast-card:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.forcast-card-degrees {
+  display: inline-flex;
+}
+.forcast-card-degrees h4 {
+  padding: 0 2px;
+  margin: 0;
+}

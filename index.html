@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <!-- axios here -->
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css link here -->
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- search box here -->
+      <div class="search">
+        <form id="search-city">
+          <input
+            type="text"
+            placeholder="Search a City"
+            id="input-text"
+            autocomplete="off"
+            autofocus="on"
+            class="search-input"
+          />
+          <input
+            type="submit"
+            value="Search"
+            id="submit"
+            class="submit-button"
+          />
+          <!-- end of search form -->
+          <button id="current-button" class="submit-button">Current</button>
+        </form>
+        <!-- end of search box div -->
+      </div>
+      <!-- header starts here -->
+      <div class="header-for-weather">
+        <!-- city-details div starts here -->
+        <div class="city-details">
+          <h1 id="city">Terhan, Iran</h1>
+          <h3 id="time-day">Monday 06:00</h3>
+          <h3><span id="weather-description">Rain</span></h3>
+          <!-- city-details div ends here -->
+        </div>
+
+        <!-- weather-info-details div starts here -->
+        <div class="weather-info">
+          <!-- span for icon and info details without menu to move together -->
+          <span class="info-group">
+            <div class="icon">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/rain.png"
+                alt=""
+              />
+            </div>
+
+            <div class="tempreture">
+              <span>
+                <h1 id="degree">17</h1>
+                <span class="units">
+                  <a id="celsius" class="celsius">°C</a> |<a
+                    id="fahrenheit"
+                    class="fahrenheit"
+                    >°F</a
+                  >
+                </span>
+              </span>
+            </div>
+
+            <div class="weather-details">
+              <ul>
+                <!-- <li>Precipitation: ?%</li> -->
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind-speed"></span> km/h</li>
+              </ul>
+            </div>
+          </span>
+        </div>
+
+        <!-- header for weather div ends here -->
+      </div>
+      <!-- weather info details menu starts here -->
+      <div class="weather-details-menu">
+        <ul>
+          <li class="menu-items">Temperature</li>
+          <li>|</li>
+          <li class="menu-items">Precipitation</li>
+          <li>|</li>
+          <li class="menu-items">Wind</li>
+        </ul>
+      </div>
+      <!-- weather-forcast div start -->
+
+      <!-- end of container div -->
+    </div>
+
+    <!-- JS link -->
+    <script src="src/index.js"></script>
+  </body>
+</html>
